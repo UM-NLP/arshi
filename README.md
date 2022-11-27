@@ -1,9 +1,9 @@
 # Obfuscated Python Packaging
-To convert Python codes to obfuscated python wheel package.
+To convert Python codes to obfuscated python wheel package.<br/>
  
 ##	PREREQUISITE
-Step 1. Install Python 3.8 and the latest PIP and Setuptool.
-Step 2. Install the latest version of Nuitka using following command:
+Step 1. Install Python 3.8 and the latest PIP and Setuptool.<br/>
+Step 2. Install the latest version of Nuitka using following command:<br/>
 `$ python3 -m pip install -U nuitka`
 
 3	CREATING BINARY FILE
