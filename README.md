@@ -20,7 +20,7 @@ Step 1. Create a folder as a root, create setup.py and MANIFEST.in files, and co
 Step 2. Create an empty python file in the subfolder and name it __init__.py.<br/>
 Step 3. Change the content of setup.py accordingly:<br/>
 Step 4. Change the content of  MANIFEST.in to:<br/>
-`recursive-include persian_language.cpython-38-x86_64-linux-gnu.so
+`recursive-include persian_language.cpython-38-x86_64-linux-gnu.so<br/>
 include *.so`
 Step 5. Run the following command  in the  root folder of package:
 `$ python3 -m pip wheel -w dist .`
@@ -28,28 +28,22 @@ After successfully running the above command, dist/persian-1.0-py3-none-any.whl 
 ## INSTALLING CUSTOMIZED PACKAGE
 Step 1. Copy the .whl file from dist folder to your device. <br/>
 Step 2.  Run the following command:<br/>
-
 `$ python3 -m pip install <wheel name>`
-
 Example of language module: 
-$ python3 -m pip install persian_language-1.0-py3-none-any.whl
-  
+`$ python3 -m pip install persian_language-1.0-py3-none-any.whl`
 ## UTILIZING CUSTOMIZED PACKAGE
-
-
 Import required functions using import command. For example:
+`from persian_language.language import prep`
 
 
 ## LIST OF WARNINGS/ERROR MESSAGES/
 ERROR HANDLING
-#	Warning/Error Message
-1	Error Message:     : libm.so.6: version `GLIBC_xx.xx' not found
-	Description:	The version of GNU C Library (glibc) on development device should equal or older than the version of glibc on deployment device. It applies to both Nuitka and PyInstaller.
-	Solution:	1-	Run “apt-cache policy libc6” on the deployment device. It displays installed version and the latest candidate version.
-2-	If the displayed candidate version is equal or higher that the version of glibc on the development device, run “apt-get install libc6=candidate_version”
-3-	If the displayed candidate version is lower that the version of glibc on the development device, the linux distribution should be updated.
-	
-
-
-
-U
+### Error Message:    
+libm.so.6: version `GLIBC_xx.xx' not found<br/>
+	Description:	The version of GNU C Library (glibc) on development device should equal or older than the version of glibc on deployment device. 
+	<br/>It applies to both Nuitka and PyInstaller.<br/>
+	<br/>
+### Solution
+Run `apt-cache policy libc6` on the deployment device. It displays installed version and the latest candidate version.<br/>
+If the displayed candidate version is equal or higher that the version of glibc on the development device, run `apt-get install libc6=candidate_version`<br/>
+If the displayed candidate version is lower that the version of glibc on the development device, the linux distribution should be updated.<br/>
