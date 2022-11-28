@@ -19,7 +19,8 @@ After successfully running the above command, persian_language.cpython-38-x86_64
 ### Step 1. Create a folder as a root, create setup.py and MANIFEST.in files, and copy your .so file to the folder.<br/>
 ### Step 2. Create an empty python file in the subfolder and name it __init__.py.<br/>
 ### Step 3. Change the content of setup.py accordingly<br/>
-`from setuptools import setup
+```
+from setuptools import setup
 setup(
     name = 'persian_language',
     version='1.0',
@@ -30,7 +31,8 @@ setup(
     data_files=[('mimos_language', ['persian_language.cpython-38-x86_64-linux-gnu.so'])],
     install_requires=['<python_package>==<version>']
 
-)`<br/>
+)
+```<br/>
 
 ### Step 4. Change the content of  MANIFEST.in to:<br/>
 `recursive-include persian_language.cpython-38-x86_64-linux-gnu.so<br/>
