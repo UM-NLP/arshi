@@ -9,7 +9,7 @@ To convert Python codes to obfuscated python wheel package.<br/>
 ## CREATING BINARY FILE
 ### Step 1. Create a folder as a root, create a file named setup.py, and copy required python modules to the sub folder.<br/>
 ### Step 2. Create an empty python file in the subfolder and name it __init__.py.<br/>
-### Step 3. Change the content of setup.py accordingly: <br/>
+### Step 3. Change the content of setup.py accordingly <br/>
 ### Step 4. Run the following command:<br/>
 `$ python3 -m nuitka --module <package_name>--include-package=<package_name>`<br/>
 For example, the below command should be used for the language program:<br/>
@@ -18,7 +18,7 @@ After successfully running the above command, persian_language.cpython-38-x86_64
 ## PACKAGING
 ### Step 1. Create a folder as a root, create setup.py and MANIFEST.in files, and copy your .so file to the folder.<br/>
 ### Step 2. Create an empty python file in the subfolder and name it __init__.py.<br/>
-### Step 3. Change the content of setup.py accordingly:<br/>
+### Step 3. Change the content of setup.py accordingly<br/>
 ### Step 4. Change the content of  MANIFEST.in to:<br/>
 `recursive-include persian_language.cpython-38-x86_64-linux-gnu.so<br/>
 include *.so`<br/>
