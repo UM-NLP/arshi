@@ -32,8 +32,7 @@ setup(
     install_requires=['<python_package>==<version>']
 
 )
-```<br/>
-
+```
 ### Step 4. Change the content of  MANIFEST.in to:<br/>
 `recursive-include persian_language.cpython-38-x86_64-linux-gnu.so<br/>
 include *.so`<br/>
