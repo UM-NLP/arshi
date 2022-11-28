@@ -30,12 +30,13 @@ setup(
     package_data={'mimos_language': ['persian_language.cpython-38-x86_64-linux-gnu.so']},
     data_files=[('mimos_language', ['persian_language.cpython-38-x86_64-linux-gnu.so'])],
     install_requires=['<python_package>==<version>']
-
 )
 ```
 ### Step 4. Change the content of  MANIFEST.in to:<br/>
-`recursive-include persian_language.cpython-38-x86_64-linux-gnu.so<br/>
-include *.so`<br/>
+```
+recursive-include persian_language.cpython-38-x86_64-linux-gnu.so
+include *.so
+```
 ### Step 5. Run the following command  in the  root folder of package:<br/>
 `$ python3 -m pip wheel -w dist .`<br/>
 After successfully running the above command, dist/persian-1.0-py3-none-any.whl will be created.
